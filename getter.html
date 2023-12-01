@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+	h2{
+		text-align: center;
+		font-size:200%;
+		padding-top: 30px;
+		
+	}
+	form {
+		text-align: center;
+		padding-top: 40px;
+	
+	}
+	label{
+		font-size: 160%;
+			
+	}
+	body{
+		background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7Y6o7cxfHXFJ4gZunp3nqYOzSqvzGgsEXWQ&usqp=CAU');
+		background-size: 100% 100%;
+		opacity: 130%;
+		background-repeat: no-repeat;
+	
+	}
+	input{
+		width:300px;
+		height: 30px;
+		top:15px;
+		text-align: center;
+		font-size: 120%;
+		font-weight: bold;
+	}
+	select{
+		width:160px;
+		height: 30px;
+	
+	}
+	
+</style>
+<body>
+   <h2 >WELCOME TO BLOOD SEARCH</h2>
+   <form action="getter1.jsp">
+	   <label><b>Username</b></label><br>
+	   <input type="text" name="A" required><br>
+	   <br>
+		<label><b>Age</b></label><br>
+		<input type="text" name="B" required><br>
+		<br>
+		<label><b>Blood group</b></label>
+		<select name="C" required>
+			<option value="A+ve">A+ve</option>
+			<option value="A-ve">A-ve</option>
+			<option value="B+ve">B+ve</option>
+			<option value="B-ve">B-ve</option>
+			<option value="AB+ve">AB+ve</option>
+			<option value="AB-ve">AB-ve</option>
+			<option value="O+ve">O+ve</option>
+			<option value="O-ve">O-ve</option>
+		</select><br>
+		<br>
+		<label><b>District</b></label><br><input type="text" name="D" required><br>
+		<br>
+		<label><b>Phone no</b></label><br><input type="tel" name="E" placeholder="123-123-1234" required><br>
+		<br>
+		<label><b>Gender</b></label>
+		<select  name="F" required>
+			<option value="Female">Female</option>
+			<option value="Male">Male</option>
+		</select><br>
+		<br>
+       <input type="submit" value="Search Blood">		
+	
+   </form>
+</body>
+</html>
